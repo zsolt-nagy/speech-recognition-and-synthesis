@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript Diktafon</title>
+    </head>
+    <body>
+        <h2>Beszédfelismerés - Speech Recognition</h2>
+        <p>Beszélsz a mikrofonba és egyes böngészők szöveggé fordítják.</p>
+        <p>Firefox böngészőben nem működik a beszédfelismerés. Javaslat: használj webkit böngészőt.</p>
+        <button type="button" class="js-speech-recognition-start">Felismerés indítása</button>
+
+        <h2>Beszédszintézis - Speech Sythesis</h2>
+        <p>Adott egy szöveg, és a böngésző felolvassa a szöveget.</p>
+        <select id="voiceSelect" title="Hang választó"></select>
+
+        <h2>Eddigi szövegek</h2>
+        <ul class="js-felismert-szöveg-lista"></ul>
+
+        <script src="./voices.js"></script>
+        <script src="./speech.js"></script>
+    </body>
+</html>
